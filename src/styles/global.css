@@ -1,0 +1,36 @@
+/* src/styles/global.css */
+
+/* Aplica estilos a todo el cuerpo de la página */
+body {
+    /* Color de fondo: un gris muy claro (casi blanco) */
+    background-color: #f8f8f8; 
+    /* Fuente moderna y limpia */
+    font-family: 'Arial', sans-serif;
+    /* Color de texto principal */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para el contenedor principal */
+main {
+    max-width: 1200px; /* Ancho máximo para que no se vea demasiado ancho en monitores grandes */
+    margin: 0 auto;  /* Centra el contenedor principal */
+    padding: 20px;
+}
+
+/* Estilos para todos los encabezados */
+h1, h2 {
+    color: #4A4A4A; /* Un gris oscuro para destacar títulos */
+    border-bottom: 2px solid #FFAF50; /* Una línea del color de tu borde de iframe */
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección del visor (para que el iframe no parezca pegado) */
+section {
+    background-color: white; /* Fondo blanco para las secciones */
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}

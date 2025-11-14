@@ -1,5 +1,7 @@
 ---
 // Bloque de código de Astro
+// 1. IMPORTANTE: Añadir la línea para conectar el archivo CSS
+import '../styles/global.css'; 
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -9,36 +11,34 @@
 </head>
 <body>
 
-    <main style="padding: 40px; text-align: center; font-family: sans-serif;">
+    <main> 
         
         <h1>Mi Portfolio de Reconstrucción 3D</h1>
         
-        <p style="margin-top: 20px;">
+        <p>
             Bienvenidos al resumen de mis proyectos de fotogrametría.
         </p>
 
-        <section style="margin-top: 80px; padding: 20px; border-top: 1px solid #eee;">
+        <section>
             <h2>PROYECTO: Moai de La Serena</h2>
             <p>
                 Reconstrucción del monumento usando Gaussian Splatting.
-				
                 añadir DESCRIPCIÓNNN.
-       
             </p>
             
-            <div style="margin: 30px auto; max-width: 1000px;">
+            <div> 
                 <iframe 
                   src="/reconstruccion-portfolio/moai-la-serena-df8-default-images-cropped.html" 
                   width="100%" 
                   height="700px" 
                   frameborder="0"
+                  
                   style="border: 4px solid #FFAF50;">
                 </iframe>
             </div>
             
-            
         </section>
-        </main>
+    </main>
 
 </body>
 </html>
