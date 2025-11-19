@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,5 +9,11 @@ export default defineConfig({
   // Nombre de tu repositorio en GitHub
   base: '/reconstruccion-portfolio', 
   // Otras configuraciones (opcionales)
-  // ...
+  integrations: [
+    starlight({
+      // 👇 Mínimo obligatorio
+      title: 'Informe de Gaussian Splatting',
+      // aquí después puedes ir agregando más cosas (sidebar, i18n, etc.)
+    }),
+  ],
 });
